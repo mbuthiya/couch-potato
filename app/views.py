@@ -10,7 +10,7 @@ def index():
     Returns:
         Returns the index html page
     '''
-    title = "Home"
+    title = "The couch potato - Home"
     return render_template('index.html', title= title)
 
 
@@ -25,5 +25,5 @@ def users(name):
     Returns:
         Returns the users html page and passes in the dynamic name to it.
     '''
-    title = f" profile {name}"
+    title = f" The couch potato= profile {name}"
     return render_template('users.html', name = name,title=title)
