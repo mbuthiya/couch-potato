@@ -1,7 +1,5 @@
-from flask import Flask,render_template
-app = Flask(__name__)
-
-
+from  flask import render_template
+from app import app
 # Index route
 @app.route('/')
 @app.route('/index')
@@ -27,9 +25,3 @@ def users(name):
         Returns the users html page and passes in the dynamic name to it.
     '''
     return render_template('users.html', name = name)
-
-
-
-
-if __name__ == '__main__':
-    app.run(debug = True)
