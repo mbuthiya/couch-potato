@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  {% if title%}
+    <title>The couch potato - {{title}}</title>
+  {%else%}
+    <title>The couch potato </title>
+  {% endif %}
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

@@ -10,7 +10,8 @@ def index():
     Returns:
         Returns the index html page
     '''
-    return render_template('index.html')
+    title = "Home"
+    return render_template('index.html', title= title)
 
 
 # users route
@@ -24,4 +25,5 @@ def users(name):
     Returns:
         Returns the users html page and passes in the dynamic name to it.
     '''
-    return render_template('users.html', name = name)
+    title = f" profile {name}"
+    return render_template('users.html', name = name,title=title)
