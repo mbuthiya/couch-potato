@@ -25,7 +25,7 @@ def users(name):
     Returns:
         Returns the users html page and passes in the dynamic name to it.
     '''
-    title = f" The couch potato= profile {name}"
+    title = f" The couch potato - profile {name}"
     return render_template('users.html', name = name,title=title)
 
 # Movies routes
@@ -74,6 +74,6 @@ def login():
 # sign up
 @app.route('/signup')
 def signup():
-    
+
     title = "The couch potato - Sign Up"
     return render_template('signup.html',title = title)
