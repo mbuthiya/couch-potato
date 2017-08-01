@@ -53,14 +53,14 @@ def shows():
 
 
 # Discover
-@app.route('/discover')
+@app.route('/blogs')
 def discover():
     '''
     Discover view  function  to display Random tv shows
 
     '''
-    title = "The couch potato - Discover"
-    return render_template('discover.html',title = title)
+    title = "The couch potato - Blogs"
+    return render_template('blogs.html',title = title)
 
 
 # Login
