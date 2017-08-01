@@ -4,12 +4,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% block styles %}
+      {{super()}}
+      <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    {% endblock %}
+
   </head>
   <body>
     {% block content %}
 
     <div class="container-fluid banner">
 
+      <div class="banner-text col-sm-5">
+        <h1>Dunkirk</h1>
+        <h3>At the point of crisis, at the point of annihilation, survival is victory.</h3>
+      </div>
     </div>
 
     {% endblock %}

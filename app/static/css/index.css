@@ -1,0 +1,48 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.banner{
+background:
+linear-gradient(
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.7)
+),
+url('../images/Dunkirk.jpg') top center ;
+background-size: cover;
+
+height: 100%;
+}
+
+.banner-text{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3%;
+  margin-top: 17%;
+}
+.banner-text h1{
+  font-size: 25px;
+  font-family: Anton;
+  border-bottom: 1px solid #ffff00;
+}
+.banner-text h3{
+  font-size: 18px;
+
+}
+.banner-text h1, .banner-text h3{
+  font-family: Roboto;
+  color: #ffff00;
+}
+
+@media (max-width:768px){
+  .banner-text{
+    text-align: center;
+  }
+  .banner-text h1{
+    font-size: 20px;
+  }
+  .banner-text h3{
+    font-size: 15px;
+  }
+
+}
