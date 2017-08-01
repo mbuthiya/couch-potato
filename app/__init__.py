@@ -7,3 +7,4 @@ app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
 from app import views
+from app import errors
