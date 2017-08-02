@@ -1,4 +1,4 @@
-from  flask import render_template,redirect,url_for
+from  flask import render_template,redirect,url_for,session
 from app import app
 from .forms import SearchForm
 # Index route
@@ -76,14 +76,26 @@ def discover():
     return render_template('news.html',title = title)
 
 
-@app.route('/search/<item>')
+@app.route('/search/<item>',methods =['GET','POST'])
 def search(item):
     '''
     Search view  function  to display searched item tags
 
     '''
+    form = SearchForm()
 
-    return render_template('search.html',item = item)
+    if form.validate_on_submit():
+
+        item = form.search_item.data
+
+        session['item'] = form.search_item.data
+
+        form.search_item.data =''
+
+        return redirect(url_for('search',item =item))
+
+
+    return render_template('search.html',item = item,form=form)
 # Login
 @app.route('/login')
 def login():
