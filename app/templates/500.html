@@ -1,9 +1,17 @@
 {% extends 'base.html'%}
 
+{% block styles%}
+
+{{  super() }}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/notFound.css')}}">
+{% endblock %}
+
 {% block content%}
 
-<div class="container">
-  <h1 class="text-center" >500 Darn </h1>
+<div class="container-fluid bannerError">
+
+  <img src="{{url_for('static',filename = 'images/500.png')}}" class="img-responsive">
 
 </div>
+
 {% endblock %}

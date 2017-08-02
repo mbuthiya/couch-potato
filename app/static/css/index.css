@@ -7,13 +7,14 @@ linear-gradient(
 url('../images/Dunkirk.jpg') top center;
 background-size: cover;
 
-height: 100%;
 }
 
 .banner-text{
   background-color: rgba(0, 0, 0, 0.6);
   padding: 3%;
-  margin-top: 17%;
+  margin-top: 10%;
+  margin-bottom: 24%;
+
 }
 .banner-text h1{
   font-size: 25px;
@@ -31,13 +32,15 @@ height: 100%;
 
 @media (max-width:768px){
   .banner-text{
-    text-align: center;
+
+    padding: 0;
+    margin-top: 100%;
   }
   .banner-text h1{
     font-size: 20px;
   }
   .banner-text h3{
-    font-size: 15px;
+    font-size: 16px;
   }
 
 }
