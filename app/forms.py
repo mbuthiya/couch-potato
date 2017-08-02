@@ -6,5 +6,5 @@ from wtforms import StringField,SubmitField
 from wtforms.validators import Required
 
 class SearchForm(Form):
-    search_item = StringField('Search for movies tv shows or blog tags ',validators=[Required()])
+    search_item = StringField('',validators=[Required()],render_kw={'placeholder':'Search'})
     submit =SubmitField('Submit')
