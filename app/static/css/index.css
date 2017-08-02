@@ -48,7 +48,7 @@ position: relative;
 @media (max-width:768px){
   .banner-text{
 
-    margin-top: 60vh;
+    margin-top: 20vh;
   }
   .banner-text h1{
     font-size: 22px;
