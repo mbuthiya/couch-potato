@@ -9,7 +9,7 @@ linear-gradient(
   rgba(0, 0, 0, 0.7),
   rgba(0, 0, 0, 0.7)
 ),
-url('../images/Dunkirk.jpg') top center ;
+url('../images/Dunkirk.jpg') top center;
 background-size: cover;
 
 height: 100%;

@@ -8,3 +8,4 @@ bootstrap = Bootstrap(app)
 
 from app import views
 from app import errors
+from app import forms
